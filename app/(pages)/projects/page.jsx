@@ -4,7 +4,7 @@ import Link from "next/link";
 const page = () => {
   return (
     <main className="min-h-[calc(100vh-12rem)] w-full p-5">
-      <div className="w-10/12 mx-auto items-center justify-items-center grid grid-cols-4 max-lg:grid-cols-2 max-xl:grid-cols-3  max-md:grid-cols-1 gap-5">
+      <div className="xl:w-[calc(65rem-0rem)] lg:w-[calc(48rem-0rem)] md:w-[calc(32rem-0rem)] mx-auto items-center justify-items-center grid grid-cols-4 max-lg:grid-cols-2 max-xl:grid-cols-3  max-md:grid-cols-1 gap-5">
         <Link href="#">
           <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
             Expo Kule
@@ -100,7 +100,7 @@ const page = () => {
         </Link>
         <Link href="#">
           <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
-            Sharjah Alqasba Tower
+            Alqasba Tower
           </h1>
           <div
             style={{
@@ -122,7 +122,7 @@ const page = () => {
         </Link>
         <Link href="#">
           <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
-            Sharjah Chedi Khor Fakkan
+            Chedi Khor Fakkan
           </h1>
           <div
             style={{
@@ -160,72 +160,6 @@ const page = () => {
           <div
             style={{
               backgroundImage: "url(/SharjahKhorfakkanBeach.jpeg)",
-            }}
-            className="w-64 bg-white brightness-50 h-64 bg-cover bg-no-repeat bg-center hover:scale-105 hover:brightness-100 transition-all duration-500 ease-in-out"
-          ></div>
-        </Link>
-        <Link href="#">
-          <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
-            Ciragan Sarayi
-          </h1>
-          <div
-            style={{
-              backgroundImage: "url(/CiraganSarayi.jpeg)",
-            }}
-            className="w-64 bg-white brightness-50 h-64 bg-cover bg-no-repeat bg-center hover:scale-105 hover:brightness-100 transition-all duration-500 ease-in-out"
-          ></div>
-        </Link>
-        <Link href="#">
-          <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
-            Swis Otel
-          </h1>
-          <div
-            style={{
-              backgroundImage: "url(/SwisOtel.jpeg)",
-            }}
-            className="w-64 bg-white brightness-50 h-64 bg-cover bg-no-repeat bg-center hover:scale-105 hover:brightness-100 transition-all duration-500 ease-in-out"
-          ></div>
-        </Link>
-        <Link href="#">
-          <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
-            Emaar Square
-          </h1>
-          <div
-            style={{
-              backgroundImage: "url(/EmaarSquare.jpeg)",
-            }}
-            className="w-64 bg-white brightness-50 h-64 bg-cover bg-no-repeat bg-center hover:scale-105 hover:brightness-100 transition-all duration-500 ease-in-out"
-          ></div>
-        </Link>
-        <Link href="#">
-          <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
-            In Istanbul
-          </h1>
-          <div
-            style={{
-              backgroundImage: "url(/InIstanbul.jpeg)",
-            }}
-            className="w-64 bg-white brightness-50 h-64 bg-cover bg-no-repeat bg-center hover:scale-105 hover:brightness-100 transition-all duration-500 ease-in-out"
-          ></div>
-        </Link>
-        <Link href="#">
-          <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
-            Avenues Mall
-          </h1>
-          <div
-            style={{
-              backgroundImage: "url(/AvenuesMall.jpeg)",
-            }}
-            className="w-64 bg-white brightness-50 h-64 bg-cover bg-no-repeat bg-center hover:scale-105 hover:brightness-100 transition-all duration-500 ease-in-out"
-          ></div>
-        </Link>
-        <Link href="#">
-          <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
-            Izmir Opera Binası
-          </h1>
-          <div
-            style={{
-              backgroundImage: "url(/IzmirOperaBinası.jpeg)",
             }}
             className="w-64 bg-white brightness-50 h-64 bg-cover bg-no-repeat bg-center hover:scale-105 hover:brightness-100 transition-all duration-500 ease-in-out"
           ></div>
