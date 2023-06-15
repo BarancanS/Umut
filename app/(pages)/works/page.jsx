@@ -77,7 +77,7 @@ export default function About() {
       </div>
       <div className="w-3/12 mx-auto max-lg:w-5/12 max-sm:hidden">
         <Image
-          src="/Umut.png"
+          src="/Umut-2.png"
           width={500}
           height={500}
           alt="about-image"
