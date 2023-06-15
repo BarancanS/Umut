@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgClose } from "react-icons/cg";
@@ -7,85 +7,96 @@ import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const currentPage = usePathname();
-  const [hamburger, setHamburger] = React.useState(false);
-
+  const [hamburgerMenu, setHamburgerMenu] = React.useState(false);
   const style1 =
     currentPage === "/about"
       ? "hover:text-white text-orange-700 transition duration-500 ease-in-out"
       : "hover:text-indigo-300 transition duration-500 ease-in-out";
   const style2 =
-    currentPage === "/projects"
+    currentPage === "/works"
       ? "hover:text-white text-orange-700 transition duration-500 ease-in-out"
       : "hover:text-indigo-300 transition duration-500 ease-in-out";
   const style3 =
+    currentPage === "/projects"
+      ? "hover:text-white text-orange-700 transition duration-500 ease-in-out"
+      : "hover:text-indigo-300 transition duration-500 ease-in-out";
+  const style4 =
     currentPage === "/contact"
       ? "hover:text-white text-orange-700 transition duration-500 ease-in-out"
       : "hover:text-indigo-300 transition duration-500 ease-in-out";
   return (
-    <div className="h-20 relative">
-      <div className=" flex items-center justify-between h-20 w-3/4 mx-auto">
-        <Link
-          href="/"
-          className="text-2xl md:text-4xl text-transparent bg-gradient-to-r bg-clip-text from-zinc-100 to-zinc-700"
-        >
-          BARAN CAN
+    <section className="w-full h-20 bg-white text-orange-700 flex flex-row ">
+      <div className="w-9/12 mx-auto flex flex-row items-center justify-between ">
+        <Link href="/">
+          <h1 className="text-4xl max-sm:text-2xl font-semibold text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700">
+            Umut Can
+          </h1>
         </Link>
-        <div className="text-4xl md:hidden">
-          <GiHamburgerMenu onClick={() => setHamburger(!hamburger)} />
-        </div>
-        <div className="hidden md:flex space-x-16 text-2xl ">
-          <Link href="/about" className={style1}>
-            About
-          </Link>
-          <Link href="/projects" className={style2}>
-            Projects
-          </Link>
-          <Link href="/contact" className={style3}>
-            Contact
-          </Link>
-        </div>
-        {hamburger && (
-          <div className="flex justify-between  absolute top-0 left-0 w-2/4 min-h-[calc(100vh+4rem)]  bg-indigo-950 text-white z-10 md:hidden whitespace-nowrap">
-            <div className="max-sm:text-sm text-xl mt-4 ml-4">
-              <Link href="/" onClick={() => setHamburger(!hamburger)}>
-                Baran
+        {hamburgerMenu && (
+          <div className="flex items-center justify-between p-4  absolute top-0 left-0 w-full min-h-[calc(17vh+0vh)]  bg-black text-white z-10 md:hidden whitespace-nowrap">
+            <div className="max-sm:text-sm text-xl">
+              <Link href="/" onClick={() => setHamburgerMenu(!hamburgerMenu)}>
+                Umut
               </Link>
             </div>
-            <div className="flex flex-col items-center justify-center max-sm:text-sm text-xl">
-              <div>
-                <Link
-                  href="/about"
-                  className={style1}
-                  onClick={() => setHamburger(!hamburger)}
-                >
-                  About
-                </Link>
-              </div>
+            <div className="flex flex-row gap-3 items-center justify-center max-sm:text-sm text-xl">
+              <Link
+                href="/about"
+                className={style1}
+                onClick={() => setHamburgerMenu(!hamburgerMenu)}
+              >
+                About
+              </Link>
+              <Link
+                href="/works"
+                className={style2}
+                onClick={() => setHamburgerMenu(!hamburgerMenu)}
+              >
+                Works
+              </Link>
               <Link
                 href="/projects"
-                className={style2}
-                onClick={() => setHamburger(!hamburger)}
+                className={style3}
+                onClick={() => setHamburgerMenu(!hamburgerMenu)}
               >
                 Projects
               </Link>
               <Link
                 href="/contact"
-                className={style3}
-                onClick={() => setHamburger(!hamburger)}
+                className={style4}
+                onClick={() => setHamburgerMenu(!hamburgerMenu)}
               >
                 Contact
               </Link>
             </div>
-            <div className="mt-5 mr-4">
+            <div className="">
               <CgClose
-                onClick={() => setHamburger(!hamburger)}
+                onClick={() => setHamburgerMenu(!hamburgerMenu)}
                 className="text-2xl max-sm:text-sm"
               />
             </div>
           </div>
         )}
+        <GiHamburgerMenu
+          className="hidden max-md:block text-2xl"
+          onClick={() => setHamburgerMenu(!hamburgerMenu)}
+        />
+        <ul className="flex  flex-row max-md:hidden">
+          <Link href="/about">
+            <li className="text-2xl font-semibold">About</li>
+          </Link>
+          <Link href="/works">
+            <li className="text-2xl font-semibold ml-5">Works</li>
+          </Link>
+          <Link href="/projects">
+            <li className="text-2xl font-semibold ml-5">Projects</li>
+          </Link>
+          <Link href="/contact">
+            <li className="text-2xl font-semibold ml-5">Contact</li>
+          </Link>
+        </ul>
       </div>
-    </div>
+    </section>
   );
 };
 

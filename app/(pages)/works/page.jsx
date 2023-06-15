@@ -6,7 +6,7 @@ export const metadata = {
 
 export default function About() {
   return (
-    <main className="min-h-[calc(100vh-10rem)] flex items-center justify-center gap-10 px-5 max-lg:flex-col">
+    <main className="min-h-[calc(100vh-12rem)] flex items-center justify-center gap-10 px-5 max-lg:flex-col">
       <div className="w-6/12 pb-6 mx-auto max-lg:w-11/12  max-sm:mt-12">
         <h1 className="sm:mt-6 max-lg:w-11/12 sm:text-2xl lg:text-4xl text-neutral-700">
           Work Experience
@@ -77,11 +77,11 @@ export default function About() {
       </div>
       <div className="w-3/12 mx-auto max-lg:w-5/12 max-sm:hidden">
         <Image
-          src="/about-image.jpg"
+          src="/Umut.png"
           width={500}
           height={500}
           alt="about-image"
-          className="w-full rounded-3xl  mx-auto  max-sm:w-7/12 animate-movey transition duration-500 ease-in-out"
+          className="w-full rounded-3xl  mx-auto  max-sm:w-7/12 "
         />
       </div>
     </main>
