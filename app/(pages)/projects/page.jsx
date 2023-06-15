@@ -98,7 +98,7 @@ const page = () => {
             <div className="w-64 h-64 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-all duration-500 ease-in-out">
               <div className="w-60 h-10 border-2 rounded-lg border-cyan-50 bg-black bg-opacity-70 flex flex-col items-center justify-center">
                 <h1 className="text-xl text-center text-orange-700 font-semibold">
-                  Tatweer Touristic Village
+                  Tatweer Village
                 </h1>
               </div>
             </div>
