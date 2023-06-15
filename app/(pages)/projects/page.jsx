@@ -78,7 +78,7 @@ const page = () => {
         </Link>
         <Link href="#">
           <div
-            style={{ backgroundImage: "url(/TaksimAcibadem.jpeg)" }}
+            style={{ backgroundImage: "url(/TaksimAcıbadem.jpeg)" }}
             className="w-64 bg-white brightness-50 h-64 bg-cover bg-no-repeat bg-center hover:scale-105 hover:brightness-100 transition-all duration-500 ease-in-out"
           >
             <div className="w-64 h-64 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-all duration-500 ease-in-out">
