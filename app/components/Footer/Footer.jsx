@@ -4,75 +4,60 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <section className="w-full h-20 bg-white text-orange-700 whitespace-nowrap ">
-      <div className="w-9/12 h-full mx-auto flex flex-row justify-between items-center max-md:w-full max-md:items-center max-md:px-3">
-        <h3 className="text-xl max-md:text-sm max-lg:text-base font-semibold text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700">
-          Umut Can
-        </h3>
-        <div className="text-xl max-md:text-sm max-lg:text-base max-md:font-medium font-semibold">
-          <Link href="#">About</Link>
-          <Link href="#" className="ml-4 max-md:ml-1 ">
-            Works
-          </Link>
-          <Link href="#" className="ml-4 max-md:ml-1">
-            Contact
-          </Link>
-        </div>
-        <div className="flex max-sm:gap-1 gap-3 flex-row">
-          <Link target="_blank" href="https://www.instagram.com/umutsnc/">
-            <Image
-              src="/instagram.png"
-              alt=""
-              width={20}
-              height={20}
-              className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-4 max-sm:h-4 w-8 h-8"
-            />
-          </Link>
-          <Link target="_blank" href="https://www.facebook.com">
-            <Image
-              src="/facebook.png"
-              alt=""
-              width={20}
-              height={20}
-              className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-4 max-sm:h-4 w-8 h-8"
-            />
-          </Link>
-          <Link target="_blank" href="https://www.twitter.com">
-            <Image
-              src="/twitter.png"
-              alt=""
-              width={20}
-              height={20}
-              className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-4 max-sm:h-4 w-8 h-8"
-            />
-          </Link>
-          <Link target="_blank" href="https://www.youtube.com">
-            <Image
-              src="/youtube.png"
-              alt=""
-              width={20}
-              height={20}
-              className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-4 max-sm:h-4 w-8 h-8"
-            />
-          </Link>
-          <Link
-            target="_blank"
-            href="https://www.linkedin.com/in/umut-can-sunnetcioglu/"
-          >
-            <Image
-              src="/linkedin.png"
-              alt=""
-              width={20}
-              height={20}
-              className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-4 max-sm:h-4 w-8 h-8"
-            />
-          </Link>
-        </div>
+    <footer className="h-20 w-3/4 max-sm:gap-2 max-sm:px-2 max-sm:w-5/6 mx-auto flex items-center justify-between text-xs md:text-xl whitespace-nowrap">
+      <div className="">@ Made By: Baran</div>
+      <div className="flex max-sm:gap-1 gap-3 flex-row">
+        <Link target="_blank" href="https://www.instagram.com/barancan.sng/">
+          <Image
+            src="/instagram.png"
+            alt=""
+            width={20}
+            height={20}
+            className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-4 max-sm:h-4 w-8 h-8"
+          />
+        </Link>
+        <Link target="_blank" href="https://www.facebook.com">
+          <Image
+            src="/facebook.png"
+            alt=""
+            width={20}
+            height={20}
+            className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-4 max-sm:h-4 w-8 h-8"
+          />
+        </Link>
+        <Link target="_blank" href="https://www.twitter.com">
+          <Image
+            src="/twitter.png"
+            alt=""
+            width={20}
+            height={20}
+            className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-4 max-sm:h-4 w-8 h-8"
+          />
+        </Link>
+        <Link target="_blank" href="https://www.youtube.com">
+          <Image
+            src="/youtube.png"
+            alt=""
+            width={20}
+            height={20}
+            className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-4 max-sm:h-4 w-8 h-8"
+          />
+        </Link>
+        <Link
+          target="_blank"
+          href="https://www.linkedin.com/in/baran-can-s%C3%BCnnet%C3%A7io%C4%9Flu-6624201b1/"
+        >
+          <Image
+            src="/linkedin.png"
+            alt=""
+            width={20}
+            height={20}
+            className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-4 max-sm:h-4 w-8 h-8"
+          />
+        </Link>
       </div>
-    </section>
+    </footer>
   );
 };
 
 export default Footer;
-
-// text-transparent bg-gradient-to-r bg-clip-text from-zinc-100 to-zinc-700
