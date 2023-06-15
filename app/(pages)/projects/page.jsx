@@ -32,48 +32,91 @@ const page = () => {
             className="w-64 bg-white brightness-50 h-64 bg-cover bg-no-repeat bg-center hover:scale-105 hover:brightness-100 transition-all duration-500 ease-in-out"
           ></div>
         </Link>
+
         <Link href="#">
           <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
-            Soho Otel
+            Port Bosphorus Hotel
           </h1>
           <div
-            style={{ backgroundImage: "url(/soho-otel.jpeg)" }}
+            style={{ backgroundImage: "url(/PortBosphorus.jpeg)" }}
             className="w-64 bg-white brightness-50 h-64 bg-cover bg-no-repeat bg-center hover:scale-105 hover:brightness-100 transition-all duration-500 ease-in-out"
           ></div>
         </Link>
         <Link href="#">
           <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
-            Expo Kule
+            Atatürk Kültür Merkezi
           </h1>
           <div
-            style={{ backgroundImage: "url(/expo-kule.jpeg)" }}
+            style={{ backgroundImage: "url(/Akm.jpeg)" }}
             className="w-64 bg-white brightness-50 h-64 bg-cover bg-no-repeat bg-center hover:scale-105 hover:brightness-100 transition-all duration-500 ease-in-out"
           ></div>
         </Link>
         <Link href="#">
           <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
-            Expo Kongre Merkezi
+            Taksim Acıbadem
           </h1>
           <div
-            style={{ backgroundImage: "url(/expo-kongre-merkezi.jpeg)" }}
+            style={{ backgroundImage: "url(/TaksimAcıbadem.jpeg)" }}
             className="w-64 bg-white brightness-50 h-64 bg-cover bg-no-repeat bg-center hover:scale-105 hover:brightness-100 transition-all duration-500 ease-in-out"
           ></div>
         </Link>
         <Link href="#">
           <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
-            Park Forbes
+            Tatweer Touristic Village
           </h1>
           <div
-            style={{ backgroundImage: "url(/park-forbes.jpeg)" }}
+            style={{ backgroundImage: "url(/TatweerTouristicVillage.jpeg)" }}
             className="w-64 bg-white brightness-50 h-64 bg-cover bg-no-repeat bg-center hover:scale-105 hover:brightness-100 transition-all duration-500 ease-in-out"
           ></div>
         </Link>
         <Link href="#">
           <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
-            Soho Otel
+            Tatweer Commercial Comlex
           </h1>
           <div
-            style={{ backgroundImage: "url(/soho-otel.jpeg)" }}
+            style={{ backgroundImage: "url(/TatweerCommercialComlex.jpeg)" }}
+            className="w-64 bg-white brightness-50 h-64 bg-cover bg-no-repeat bg-center hover:scale-105 hover:brightness-100 transition-all duration-500 ease-in-out"
+          ></div>
+        </Link>
+        <Link href="#">
+          <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
+            Crowne Plaza
+          </h1>
+          <div
+            style={{ backgroundImage: "url(/CrownePlaza.jpeg)" }}
+            className="w-64 bg-white brightness-50 h-64 bg-cover bg-no-repeat bg-center hover:scale-105 hover:brightness-100 transition-all duration-500 ease-in-out"
+          ></div>
+        </Link>
+        <Link href="#">
+          <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
+            Riyad King Abdullah Foundation
+          </h1>
+          <div
+            style={{
+              backgroundImage: "url(/RiyadKingAbdullahFoundation.jpeg)",
+            }}
+            className="w-64 bg-white brightness-50 h-64 bg-cover bg-no-repeat bg-center hover:scale-105 hover:brightness-100 transition-all duration-500 ease-in-out"
+          ></div>
+        </Link>
+        <Link href="#">
+          <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
+            Sharjah Alqasba Tower
+          </h1>
+          <div
+            style={{
+              backgroundImage: "url(/SharjahAlqasbaTower.jpeg)",
+            }}
+            className="w-64 bg-white brightness-50 h-64 bg-cover bg-no-repeat bg-center hover:scale-105 hover:brightness-100 transition-all duration-500 ease-in-out"
+          ></div>
+        </Link>
+        <Link href="#">
+          <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
+            Le Meridien Hotel
+          </h1>
+          <div
+            style={{
+              backgroundImage: "url(/LeMeridienHotel.jpeg)",
+            }}
             className="w-64 bg-white brightness-50 h-64 bg-cover bg-no-repeat bg-center hover:scale-105 hover:brightness-100 transition-all duration-500 ease-in-out"
           ></div>
         </Link>
