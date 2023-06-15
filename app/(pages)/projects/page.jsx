@@ -71,7 +71,7 @@ const page = () => {
         </Link>
         <Link href="#">
           <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
-            Tatweer Commercial Comlex
+            Tatweer Commercial
           </h1>
           <div
             style={{ backgroundImage: "url(/TatweerCommercialComlex.jpeg)" }}
@@ -89,7 +89,7 @@ const page = () => {
         </Link>
         <Link href="#">
           <h1 className="text-xl text-center hover:scale-105 text-orange-700 font-semibold">
-            Riyad King Abdullah Foundation
+            Riyad King Abdullah
           </h1>
           <div
             style={{
