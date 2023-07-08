@@ -33,7 +33,7 @@ const Navbar = () => {
           </h1>
         </Link>
         {hamburgerMenu && (
-          <div className="flex items-center justify-between p-4  absolute top-0 left-0 w-full min-h-[calc(17vh+0vh)]  bg-black text-white z-10 md:hidden whitespace-nowrap">
+          <div className="flex items-center justify-between p-4  fixed top-0 left-0 w-full min-h-[calc(17vh+0vh)]  bg-black text-white z-10 md:hidden whitespace-nowrap">
             <div className="max-sm:text-sm text-xl">
               <Link href="/" onClick={() => setHamburgerMenu(!hamburgerMenu)}>
                 Umut
