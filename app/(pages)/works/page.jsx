@@ -1,10 +1,6 @@
+import React from "react";
 import Image from "next/image";
-export const metadata = {
-  title: "About  Page",
-  description: `About  Page`,
-};
-
-export default function About() {
+const Works = () => {
   return (
     <main className="min-h-[calc(100vh-12rem)] flex items-center justify-center gap-10 px-5 max-lg:flex-col">
       <div className="w-6/12 pb-6 mx-auto max-lg:w-11/12  max-sm:mt-12">
@@ -86,7 +82,9 @@ export default function About() {
       </div>
     </main>
   );
-}
+};
+
+export default Works;
 
 // <div className="">
 //   <h2>Skillset:</h2>

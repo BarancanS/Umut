@@ -1,10 +1,6 @@
-import Image from "next/image";
-export const metadata = {
-  title: "About  Page",
-  description: `About  Page`,
-};
+import React from "react";
 
-export default function About() {
+const About = () => {
   return (
     <main className="min-h-[calc(100vh-12rem)] flex flex-col p-6">
       <div className="max-md:w-full w-10/12 mx-auto">
@@ -95,4 +91,6 @@ export default function About() {
       </section>
     </main>
   );
-}
+};
+
+export default About;

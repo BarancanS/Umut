@@ -9,17 +9,29 @@ const Footer = () => {
         <h3 className="text-xl max-md:text-sm max-lg:text-base font-semibold text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700">
           Umut Can
         </h3>
-        <div className="max-sm:flex max-sm:flex-col text-xl max-md:text-sm max-lg:text-base max-md:font-medium font-semibold">
-          <Link href="/about" className="ml-4 max-md:ml-1">
+        <div className="max-sm:hidden text-xl max-md:text-sm max-lg:text-base max-md:font-medium font-semibold">
+          <Link
+            href="/about"
+            className="ml-4 max-md:ml-1 transition-all duration-700 ease-out hover:text-[#475892]"
+          >
             About
           </Link>
-          <Link href="/works" className="ml-4 max-md:ml-1 ">
+          <Link
+            href="/works"
+            className="ml-4 max-md:ml-1 transition-all duration-700 ease-out hover:text-[#475892]"
+          >
             Works
           </Link>
-          <Link href="/contact" className="ml-4 max-md:ml-1">
+          <Link
+            href="/contact"
+            className="ml-4 max-md:ml-1 transition-all duration-700 ease-out hover:text-[#475892]"
+          >
             Contact
           </Link>
-          <Link href="/projects" className="ml-4 max-md:ml-1">
+          <Link
+            href="/projects"
+            className="ml-4 max-md:ml-1 transition-all duration-700 ease-out hover:text-[#475892]"
+          >
             Projects
           </Link>
         </div>
@@ -30,7 +42,7 @@ const Footer = () => {
               alt=""
               width={20}
               height={20}
-              className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-4 max-sm:h-4 w-8 h-8"
+              className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-6 max-sm:h-6 w-8 h-8"
             />
           </Link>
           <Link target="_blank" href="https://www.facebook.com">
@@ -39,7 +51,7 @@ const Footer = () => {
               alt=""
               width={20}
               height={20}
-              className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-4 max-sm:h-4 w-8 h-8"
+              className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-6 max-sm:h-6 w-8 h-8"
             />
           </Link>
           <Link target="_blank" href="https://www.twitter.com">
@@ -48,7 +60,7 @@ const Footer = () => {
               alt=""
               width={20}
               height={20}
-              className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-4 max-sm:h-4 w-8 h-8"
+              className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-6 max-sm:h-6 w-8 h-8"
             />
           </Link>
           <Link target="_blank" href="https://www.youtube.com">
@@ -57,7 +69,7 @@ const Footer = () => {
               alt=""
               width={20}
               height={20}
-              className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-4 max-sm:h-4 w-8 h-8"
+              className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-6 max-sm:h-6 w-8 h-8"
             />
           </Link>
           <Link
@@ -69,7 +81,7 @@ const Footer = () => {
               alt=""
               width={20}
               height={20}
-              className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-4 max-sm:h-4 w-8 h-8"
+              className="transition duration-400 ease-in-out hover:scale-110 max-sm:w-6 max-sm:h-6 w-8 h-8"
             />
           </Link>
         </div>

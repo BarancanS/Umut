@@ -4,8 +4,7 @@ import emailjs from "@emailjs/browser";
 import { AiOutlinePhone } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 import { GiWorld } from "react-icons/gi";
-
-export default function Contact() {
+const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -129,13 +128,15 @@ export default function Contact() {
             width="600"
             height="450"
             style={{ border: "0" }}
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
             className="mx-auto !w-[calc(100vw-10vw)] rounded-lg"
           ></iframe>
         </div>
       </section>
     </main>
   );
-}
+};
+
+export default Contact;

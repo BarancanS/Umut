@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const page = () => {
+const Projects = () => {
   return (
     <main className="min-h-[calc(100vh-12rem)] w-full p-5">
       <div className="xl:w-[calc(65rem-0rem)] lg:w-[calc(48rem-0rem)] md:w-[calc(32rem-0rem)] mx-auto items-center justify-items-center grid grid-cols-4 max-lg:grid-cols-2 max-xl:grid-cols-3  max-md:grid-cols-1 gap-5">
@@ -231,4 +231,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Projects;

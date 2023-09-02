@@ -1,73 +1,71 @@
 "use client";
-import React from "react";
+import { usePathname } from "next/navigation";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgClose } from "react-icons/cg";
-import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-  const currentPage = usePathname();
-  const [hamburgerMenu, setHamburgerMenu] = React.useState(false);
-  const style1 =
-    currentPage === "/about"
-      ? "hover:text-white text-orange-700 transition duration-500 ease-in-out"
-      : "hover:text-indigo-300 transition duration-500 ease-in-out";
-  const style2 =
-    currentPage === "/works"
-      ? "hover:text-white text-orange-700 transition duration-500 ease-in-out"
-      : "hover:text-indigo-300 transition duration-500 ease-in-out";
-  const style3 =
-    currentPage === "/projects"
-      ? "hover:text-white text-orange-700 transition duration-500 ease-in-out"
-      : "hover:text-indigo-300 transition duration-500 ease-in-out";
-  const style4 =
-    currentPage === "/contact"
-      ? "hover:text-white text-orange-700 transition duration-500 ease-in-out"
-      : "hover:text-indigo-300 transition duration-500 ease-in-out";
+  const [hamburgerMenu, setHamburgerMenu] = useState(false);
+
+  const pathname = usePathname();
+  console.log(pathname);
+
   return (
     <section className="w-full h-20 bg-white text-orange-700 flex flex-row ">
       <div className="w-9/12 mx-auto flex flex-row items-center justify-between ">
-        <Link href="/">
-          <h1 className="text-4xl max-sm:text-2xl font-semibold text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700">
-            Umut Can
-          </h1>
+        <Link
+          href="/"
+          className={`text-4xl font-semibold ml-5 transition-all duration-700 ease-out ${
+            pathname === "/"
+              ? "text-transparent bg-gradient-to-r bg-clip-text from-[#475892] to-red-900 hover:text-stone-600"
+              : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400"
+          }`}
+        >
+          Umut Can
         </Link>
         {hamburgerMenu && (
-          <div className="flex items-center justify-between p-4  fixed top-0 left-0 w-full min-h-[calc(17vh+0vh)]  bg-black text-white z-10 md:hidden whitespace-nowrap">
+          <div className="flex items-center justify-between p-4  fixed top-0 left-0 w-full h-[18vh]  bg-black text-white z-10 md:hidden whitespace-nowrap">
             <div className="max-sm:text-sm text-xl">
               <Link href="/" onClick={() => setHamburgerMenu(!hamburgerMenu)}>
-                Umut
+                <h1 className="text-4xl max-md:text-2xl max-sm:text-base font-semibold text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700">
+                  Umut Can
+                </h1>
               </Link>
             </div>
-            <div className="flex flex-row gap-3 items-center justify-center max-sm:text-sm text-xl">
-              <Link
-                href="/about"
-                className={style1}
-                onClick={() => setHamburgerMenu(!hamburgerMenu)}
-              >
-                About
-              </Link>
-              <Link
-                href="/works"
-                className={style2}
-                onClick={() => setHamburgerMenu(!hamburgerMenu)}
-              >
-                Works
-              </Link>
-              <Link
-                href="/projects"
-                className={style3}
-                onClick={() => setHamburgerMenu(!hamburgerMenu)}
-              >
-                Projects
-              </Link>
-              <Link
-                href="/contact"
-                className={style4}
-                onClick={() => setHamburgerMenu(!hamburgerMenu)}
-              >
-                Contact
-              </Link>
+            <div className="flex flex-row max-sm:flex-row gap-3 items-center justify-center max-sm:text-sm text-xl">
+              <div className="flex max-sm:flex-col gap-3">
+                <Link
+                  href="/about"
+                  className=""
+                  onClick={() => setHamburgerMenu(!hamburgerMenu)}
+                >
+                  About
+                </Link>
+                <Link
+                  href="/works"
+                  className=""
+                  onClick={() => setHamburgerMenu(!hamburgerMenu)}
+                >
+                  Works
+                </Link>
+              </div>
+              <div className="flex max-sm:flex-col gap-3">
+                <Link
+                  href="/projects"
+                  className=""
+                  onClick={() => setHamburgerMenu(!hamburgerMenu)}
+                >
+                  Projects
+                </Link>
+                <Link
+                  href="/contact"
+                  className=""
+                  onClick={() => setHamburgerMenu(!hamburgerMenu)}
+                >
+                  Contact
+                </Link>
+              </div>
             </div>
             <div className="">
               <CgClose
@@ -82,17 +80,45 @@ const Navbar = () => {
           onClick={() => setHamburgerMenu(!hamburgerMenu)}
         />
         <ul className="flex  flex-row max-md:hidden">
-          <Link href="/about">
-            <li className="text-2xl font-semibold">About</li>
+          <Link
+            href="/about"
+            className={`text-2xl font-semibold ml-5 transition-all duration-700 ease-out ${
+              pathname === "/about"
+                ? "text-transparent bg-gradient-to-r bg-clip-text from-[#475892] to-red-900 hover:text-stone-600"
+                : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400"
+            }`}
+          >
+            About
           </Link>
-          <Link href="/works">
-            <li className="text-2xl font-semibold ml-5">Works</li>
+          <Link
+            href="/works"
+            className={`text-2xl font-semibold ml-5 transition-all duration-700 ease-out ${
+              pathname === "/works"
+                ? "text-transparent bg-gradient-to-r bg-clip-text from-[#475892] to-red-900 hover:text-stone-600"
+                : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400"
+            }`}
+          >
+            Works
           </Link>
-          <Link href="/projects">
-            <li className="text-2xl font-semibold ml-5">Projects</li>
+          <Link
+            href="/projects"
+            className={`text-2xl font-semibold ml-5 transition-all duration-700 ease-out ${
+              pathname === "/projects"
+                ? "text-transparent bg-gradient-to-r bg-clip-text from-[#475892] to-red-900 hover:text-stone-600"
+                : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400"
+            }`}
+          >
+            Projects
           </Link>
-          <Link href="/contact">
-            <li className="text-2xl font-semibold ml-5">Contact</li>
+          <Link
+            href="/contact"
+            className={`text-2xl font-semibold ml-5 transition-all duration-700 ease-out ${
+              pathname === "/contact"
+                ? "text-transparent bg-gradient-to-r bg-clip-text from-[#475892] to-red-900 hover:text-stone-600"
+                : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400"
+            }`}
+          >
+            Contact
           </Link>
         </ul>
       </div>
