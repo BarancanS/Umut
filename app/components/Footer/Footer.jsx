@@ -23,7 +23,7 @@ const Footer = () => {
           <Link
             href="/about"
             className={`ml-5 transition-all duration-700 ease-out ${
-              pathname === "/"
+              pathname === "/about"
                 ? "text-transparent bg-gradient-to-r bg-clip-text from-[#475892] to-red-900 hover:text-stone-600"
                 : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400"
             }`}
@@ -33,7 +33,7 @@ const Footer = () => {
           <Link
             href="/works"
             className={`ml-5 transition-all duration-700 ease-out ${
-              pathname === "/"
+              pathname === "/works"
                 ? "text-transparent bg-gradient-to-r bg-clip-text from-[#475892] to-red-900 hover:text-stone-600"
                 : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400"
             }`}
@@ -43,7 +43,7 @@ const Footer = () => {
           <Link
             href="/projects"
             className={`ml-5 transition-all duration-700 ease-out ${
-              pathname === "/"
+              pathname === "/projects"
                 ? "text-transparent bg-gradient-to-r bg-clip-text from-[#475892] to-red-900 hover:text-stone-600"
                 : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400"
             }`}
@@ -53,7 +53,7 @@ const Footer = () => {
           <Link
             href="/contact"
             className={`ml-5 transition-all duration-700 ease-out ${
-              pathname === "/"
+              pathname === "/contact"
                 ? "text-transparent bg-gradient-to-r bg-clip-text from-[#475892] to-red-900 hover:text-stone-600"
                 : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400"
             }`}
