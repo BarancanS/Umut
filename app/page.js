@@ -15,7 +15,7 @@ export default function Home() {
             <button className="bg-orange-700 p-4 rounded-xl">Learn More</button>
           </Link>
           <Link href="/contact" className="ml-6">
-            <button className="bg-orange-700 p-4 rounded-xl">Contact Us</button>
+            <button className="bg-orange-700 p-4 rounded-xl">Contact Me</button>
           </Link>
         </div>
       </section>
