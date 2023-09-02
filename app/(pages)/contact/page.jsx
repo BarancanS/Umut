@@ -27,7 +27,7 @@ const Contact = () => {
   };
 
   return (
-    <main className="min-h-[calc(100vh-12rem)] w-11/12">
+    <main className="min-h-[calc(100vh-12rem)] w-11/12 mx-auto">
       <h1 className="text-7xl mb-10 max-md:text-4xl text-center text-orange-700">
         Contact Me
       </h1>

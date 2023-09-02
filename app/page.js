@@ -1,15 +1,6 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  const [currentPage, setCurrentPage] = useState("");
-  useEffect(() => {
-    const currentUrl = window.location.href;
-    setCurrentPage(currentUrl);
-  }, [currentPage]);
-  console.log(currentPage);
   return (
     <main className="flex min-h-[calc(100vh-12rem)] flex-col items-center">
       <section
