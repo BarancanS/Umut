@@ -1,29 +1,12 @@
 import React from "react";
 import Image from "next/image";
-const Card = ({ title, description, imageUrl }) => {
-  return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden m-4">
-      <Image
-        src={imageUrl}
-        width={500}
-        height={500}
-        alt={title}
-        className="w-full h-40 object-contain"
-      />
-      <div className="p-4">
-        <h2 className="text-xl font-semibold text-gray-800 mb-2">{title}</h2>
-        <p className="text-gray-600">{description}</p>
-      </div>
-    </div>
-  );
-};
 
 const ThreeCards = () => {
   return (
-    <main className="min-h-[calc(100vh-12rem)] flex flex-col p-6">
+    <main className="min-h-[calc(100vh-12rem)] flex flex-col">
       <div className="max-md:w-full w-10/12 mx-auto">
         <div className="flex flex-row gap-5 max-lg:flex-col items-start justify-start">
-          <div class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+          <div class="max-w-xl mx-auto p-4 bg-white rounded-lg shadow-lg">
             <div class="text-center">
               <h1 class="text-2xl text-left font-semibold mb-4">Umut Can</h1>
               <p class="text-gray-600 text-left">
@@ -78,7 +61,7 @@ const ThreeCards = () => {
             </div>
           </div>
           <div className="flex justify-center mx-auto items-start h-screen bg-gray-100">
-            <div className="grid max-md:grid-cols-1 md:grid-cols-1 gap-4">
+            <div className="grid grid-cols-1 gap-4">
               <div className="max-w-xl mx-auto bg-white rounded-lg shadow-lg">
                 <Image
                   src="/Languages.png"
@@ -115,6 +98,34 @@ const ThreeCards = () => {
                   </p>
                 </div>
               </div>
+              <div className="max-w-xl mx-auto bg-white rounded-lg shadow-lg">
+                <Image
+                  src="/ComputerSkills.png"
+                  width={500}
+                  height={500}
+                  alt="Computer Skills"
+                  className="w-full h-40 object-contain"
+                />
+                <div className="p-4">
+                  <h2 className="text-xl font-semibold text-gray-800 mb-2">
+                    Seminars and Courses
+                  </h2>
+                  <h2 className="text-base font-semibold text-gray-800 mb-2">
+                    Advanced Oracle Unifier
+                  </h2>
+                  <p className="text-gray-600">
+                    Starting Date: 07.2018 - Finishing Date: 07.2018 Duration:
+                    36h
+                  </p>
+                  <h2 className="text-base font-semibold text-gray-800 mb-2">
+                    Advanced Primavera P6 EPPM
+                  </h2>
+                  <p className="text-gray-600">
+                    Starting Date: 12.2016 - Finishing Date: 01.2017 Duration:
+                    18h
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -124,28 +135,3 @@ const ThreeCards = () => {
 };
 
 export default ThreeCards;
-
-{
-  /* <div className="max-w-xl bg-white p-10 rounded-lg shadow-lg">
-  {" "}
-  <h1 className="max-sm:text-base max-lg:text-xl font-semibold text-left">
-    Seminars and Courses
-  </h1>
-  <h3 className="max-sm:text-sm max-lg:mt-3 lg:mt-0 max-lg:text-md font-semibold text-left ">
-    Advanced Oracle Unifier
-  </h3>
-  <p className="max-sm:text-xs max-lg:text-sm font-medium text-left">
-    Starting: 07.2018
-    <br />
-    Finishing: 07.2018 Duration: 36h
-  </p>
-  <h3 className="max-sm:text-sm mt-3 max-lg:text-md font-semibold text-left ">
-    {" "}
-    Advanced Primavera P6 EPPM
-  </h3>
-  <p className="max-sm:text-xs max-lg:text-sm font-medium text-left">
-    Starting : 12.2016 <br />
-    Finishing : 01.2017 Duration: 18h
-  </p>
-</div>; */
-}
