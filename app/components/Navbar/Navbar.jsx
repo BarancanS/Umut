@@ -15,8 +15,8 @@ const Navbar = () => {
           href="/"
           className={`text-4xl max-sm:text-2xl font-semibold transition-all duration-700 ease-out ${
             pathname === "/"
-              ? "text-transparent bg-gradient-to-r bg-clip-text from-stone-400 to-stone-500 hover:scale-110"
-              : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400"
+              ? "text-transparent bg-gradient-to-r bg-clip-text from-stone-400 to-stone-500 "
+              : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400 hover:scale-110"
           }`}
         >
           Umut Can
@@ -107,8 +107,8 @@ const Navbar = () => {
             href="/about"
             className={`text-2xl font-bold ml-5 transition-all duration-700 ease-out ${
               pathname === "/about"
-                ? "text-transparent bg-gradient-to-r bg-clip-text from-stone-400 to-stone-500 hover:scale-110"
-                : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400"
+                ? "text-transparent bg-gradient-to-r bg-clip-text from-stone-400 to-stone-500"
+                : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400 hover:scale-110"
             }`}
           >
             About
@@ -117,8 +117,8 @@ const Navbar = () => {
             href="/works"
             className={`text-2xl font-bold ml-5 transition-all duration-700 ease-out ${
               pathname === "/works"
-                ? "text-transparent bg-gradient-to-r bg-clip-text from-stone-400 to-stone-500 hover:scale-110"
-                : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400"
+                ? "text-transparent bg-gradient-to-r bg-clip-text from-stone-400 to-stone-500"
+                : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400 hover:scale-110"
             }`}
           >
             Works
@@ -127,8 +127,8 @@ const Navbar = () => {
             href="/projects"
             className={`text-2xl font-bold ml-5 transition-all duration-700 ease-out ${
               pathname === "/projects"
-                ? "text-transparent bg-gradient-to-r bg-clip-text from-stone-400 to-stone-500 hover:scale-110"
-                : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400"
+                ? "text-transparent bg-gradient-to-r bg-clip-text from-stone-400 to-stone-500"
+                : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400 hover:scale-110"
             }`}
           >
             Projects
@@ -137,8 +137,8 @@ const Navbar = () => {
             href="/contact"
             className={`text-2xl font-bold ml-5 transition-all duration-700 ease-out ${
               pathname === "/contact"
-                ? "text-transparent bg-gradient-to-r bg-clip-text from-stone-400 to-stone-500 hover:scale-110"
-                : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400"
+                ? "text-transparent bg-gradient-to-r bg-clip-text from-stone-400 to-stone-500"
+                : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400 hover:scale-110"
             }`}
           >
             Contact

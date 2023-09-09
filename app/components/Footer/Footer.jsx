@@ -9,17 +9,7 @@ const Footer = () => {
   return (
     <section className="w-full h-20 bg-white whitespace-nowrap ">
       <div className="w-9/12 h-full mx-auto flex flex-row justify-between items-center max-md:w-full max-md:items-center max-md:px-3">
-        <Link
-          href="/"
-          className={`text-4xl max-sm:text-2xl font-semibold transition-all duration-700 ease-out ${
-            pathname === "/"
-              ? "text-transparent bg-gradient-to-r bg-clip-text from-stone-400 to-stone-500 hover:scale-110"
-              : "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 hover:text-stone-400"
-          }`}
-        >
-          Umut Can
-        </Link>
-        <div className="max-sm:hidden text-xl max-md:text-sm max-lg:text-base  font-bold">
+        <div className="max-[440px]:hidden text-xl max-md:text-sm max-lg:text-base  font-bold">
           <Link
             href="/about"
             className={`ml-5 transition-all duration-700 ease-out ${
@@ -61,7 +51,7 @@ const Footer = () => {
             Contact
           </Link>
         </div>
-        <div className="flex max-sm:gap-1 gap-3 flex-row">
+        <div className="flex max-sm:mx-auto max-sm:gap-1 gap-3 flex-row">
           <Link target="_blank" href="https://www.instagram.com/umutsnc/">
             <Image
               src="/instagram.png"

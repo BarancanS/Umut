@@ -13,12 +13,12 @@ export default function Home() {
           </h1>
           <div className="flex flex-row mt-6">
             <Link href="/about">
-              <button className="bg-orange-700 p-4 rounded-xl">
+              <button className="bg-orange-700 p-4 rounded-xl  hover:scale-105 transition-all duration-500 ease-out">
                 Learn More
               </button>
             </Link>
             <Link href="/contact" className="ml-6">
-              <button className="bg-orange-700 p-4 rounded-xl">
+              <button className="bg-orange-700 p-4 rounded-xl  hover:scale-105 transition-all duration-500 ease-out">
                 Contact Me
               </button>
             </Link>
