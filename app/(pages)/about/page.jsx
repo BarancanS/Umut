@@ -100,7 +100,7 @@ const ThreeCards = () => {
               </div>
               <div className="max-w-xl mx-auto bg-white rounded-lg shadow-lg">
                 <Image
-                  src="/ComputerSkills.png"
+                  src="/SeminarAndCourses.png"
                   width={500}
                   height={500}
                   alt="Computer Skills"
