@@ -24,13 +24,13 @@ const Navbar = () => {
         {
           <div
             className={`flex items-center justify-between p-4  w-full h-[14vh] text-white md:hidden whitespace-nowrap fixed inset-0 bg-black  z-30 top-[68px] left-0  ${
-              hamburgerMenu ? "translate-y-[-60%]" : "translate-y-[-170%]"
+              hamburgerMenu ? "translate-y-[-75%]" : "translate-y-[-170%]"
             } transition-transform duration-500 ease-in-out`}
           >
             <div className="text-xl">
               <Link
                 href="/"
-                className={`text-4xl max-md:text-2xl font-semibold ${
+                className={`text-4xl max-md:text-base font-semibold ${
                   pathname === "/"
                     ? "text-transparent bg-gradient-to-r bg-clip-text from-orange-400 to-red-700"
                     : "text-transparent bg-gradient-to-r bg-clip-text from-white to-stone-300"
