@@ -79,7 +79,7 @@ const ThreeCards = () => {
           </div>
           <div className="flex justify-center mx-auto items-start h-screen bg-gray-100">
             <div className="grid max-md:grid-cols-1 md:grid-cols-1 gap-4">
-              <div className="max-w-xl mx-auto bg-white p-10 rounded-lg shadow-lg">
+              <div className="max-w-xl mx-auto bg-white rounded-lg shadow-lg">
                 <Image
                   src="/Languages.png"
                   width={500}
@@ -96,7 +96,7 @@ const ThreeCards = () => {
                   </p>
                 </div>
               </div>
-              <div className="max-w-xl mx-auto bg-white p-10 rounded-lg shadow-lg">
+              <div className="max-w-xl mx-auto bg-white rounded-lg shadow-lg">
                 <Image
                   src="/ComputerSkills.png"
                   width={500}
