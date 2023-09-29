@@ -1,6 +1,6 @@
 import React from "react";
 export const metadata = {
-  title: "Umut Can's Projects | Planning and Cost Control Civil Engineering ",
+  title: "Umut's Projects | Planning and Cost Control Civil Engineering ",
   description:
     "Explore Umut's diverse project portfolio in Planning and Cost Control Civil Engineering. Discover successful projects, detailed case studies, and the application of expertise in project planning and budget management.",
 };

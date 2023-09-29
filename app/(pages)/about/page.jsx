@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 export const metadata = {
-  title: "About Umut Can | Planning and Cost Control Civil Engineering ",
+  title: "About Umut | Planning and Cost Control Civil Engineering ",
   description:
-    "Explore [Your Name]'s extensive work experience as a Planning and Cost Control Engineer. From managing projects with budgets ranging from €41,000,000 to €200,000,000 to overseeing structural works and timely completion, discover a proven track record of excellence in the civil engineering industry.",
+    "Discover the role of a Project Scheduler and Analyst in managing schedules, resources, and finances for successful construction projects. They use Power BI for interactive reporting, analyze productivity, handle contracts, and optimize project timelines and costs.",
 };
 
 const ThreeCards = () => {

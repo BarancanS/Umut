@@ -1,5 +1,10 @@
 import React from "react";
 import Image from "next/image";
+export const metadata = {
+  title: "Umut's Works | Planning and Cost Control Civil Engineering ",
+  description:
+    "Explore Umut's extensive work experience as a Planning and Cost Control Engineer. From managing projects with budgets ranging from €41,000,000 to €200,000,000 to overseeing structural works and timely completion, discover a proven track record of excellence in the civil engineering industry.",
+};
 const Works = () => {
   return (
     <main className="min-h-[calc(100vh-12rem)] flex items-center justify-center gap-10 px-5 max-lg:flex-col">
