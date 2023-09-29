@@ -1,6 +1,9 @@
 import React from "react";
-import Link from "next/link";
-
+export const metadata = {
+  title: "Umut Can's Projects | Planning and Cost Control Civil Engineering ",
+  description:
+    "Explore Umut's diverse project portfolio in Planning and Cost Control Civil Engineering. Discover successful projects, detailed case studies, and the application of expertise in project planning and budget management.",
+};
 const Projects = () => {
   return (
     <main className="min-h-[calc(100vh-12rem)] w-full p-5">

@@ -1,31 +1,13 @@
-"use client";
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
 import { AiOutlinePhone } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 import { GiWorld } from "react-icons/gi";
+import Form from "@/app/components/Form/Form";
+export const metadata = {
+  title: "Contact Umut's - Planning and Cost Control Civil Engineer",
+  description:
+    "Get in touch with Umut Can Sunnetcioglu, a Planning and Cost Control Civil Engineer, to discuss your project needs or inquire about services. Contact details and a convenient form are provided for your convenience.",
+};
 const Contact = () => {
-  const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_mmghwek",
-        "template_0dtw8u6",
-        form.current,
-        "ORMfpcyEwiZ1F6dH8"
-      )
-      .then(
-        () => {
-          alert("Your Message Sended");
-        },
-        (error) => {
-          alert(error.text);
-        }
-      );
-    e.target.reset();
-  };
-
   return (
     <main className="min-h-[calc(100vh-12rem)] w-11/12 mx-auto">
       <h1 className="text-7xl mb-10 max-md:text-4xl text-center text-orange-700">
@@ -33,48 +15,7 @@ const Contact = () => {
       </h1>
       <section className="flex flex-col">
         <div className="flex  max-sm:flex-col">
-          <div className="w-7/12 max-sm:w-11/12 ">
-            <form
-              ref={form}
-              onSubmit={sendEmail}
-              className="flex flex-col items-center"
-            >
-              <input
-                type="text"
-                placeholder="Enter Your Name"
-                className="transition duration-500 hover:scale-105 bg-transparent w-6/12 max-sm:w-9/12 h-10 border-2 border-orange-700 pl-3 rounded-md"
-                name="name"
-                required
-                minLength="3"
-                maxLength="20"
-              />
-              <input
-                type="email"
-                placeholder="Enter Your Email"
-                className="transition duration-500 ease-in-out hover:scale-105 bg-transparent w-6/12 max-sm:w-9/12 h-10 border-2 border-orange-700 pl-3 mt-3 rounded-md"
-                name="email"
-                required
-                minLength="8"
-                maxLength="20"
-              />
-              <textarea
-                id=""
-                cols="30"
-                rows="10"
-                className="transition duration-500 hover:scale-105 bg-transparent w-6/12 max-sm:w-9/12 border-2 border-orange-700 pl-3 mt-3 rounded-md"
-                name="message"
-                placeholder="Enter Your Message"
-                required
-                minLength="10"
-                maxLength="20"
-              ></textarea>
-              <input
-                type="submit"
-                className="transition duration-500 hover:scale-105 mt-10 bg-orange-700 text-white  rounded-3xl text-xl py-3 px-5 max-sm:py-1 max-sm:px-3 rounded-3xl text-sm"
-                value="Send Your Message"
-              />
-            </form>
-          </div>
+          <Form />
           <div className="w-4/12 max-sm:w-11/12 max-sm:mt-8 ">
             <div className="flex flex-col items-center">
               <div className="w-full max-sm:w-9/12 h-28  pt-2 border-2 border-orange-700 rounded-md">
