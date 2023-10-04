@@ -13,7 +13,6 @@ const ThreeCards = () => {
         <div className="flex flex-row gap-5 max-lg:flex-col items-start justify-start">
           <div class="max-w-xl mx-auto p-4 bg-white rounded-lg shadow-lg">
             <div class="text-center">
-              <h1 class="text-2xl text-left font-semibold mb-4">Umut Can</h1>
               <p class="text-gray-600 text-left">
                 Project Scheduler and Analyst
               </p>

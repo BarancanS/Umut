@@ -8,7 +8,7 @@ const Tiny = () => {
           <p>umutsng@gmail.com</p>
         </Link>
         <Link href="#">
-          <p className="ml-6">Macedonia/Skopje</p>
+          <p className="ml-6">North Macedonia/Skopje</p>
         </Link>
         <Link href="#">
           <p className="ml-6 max-sm:hidden">+90 554 988 01 03</p>
